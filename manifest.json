@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Claude-like Theme for ChatGPT",
+  "version": "0.14.9",
+  "description": "A warm, Claude-like visual theme for ChatGPT.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://www.chatgpt.com/*"
+      ],
+      "css": [
+        "theme.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
