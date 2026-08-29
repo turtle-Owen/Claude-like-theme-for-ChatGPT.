@@ -40,3 +40,7 @@ The theme targets the current ChatGPT web UI. ChatGPT can change its DOM or CSS 
 ## License
 
 MIT
+
+## Acknowledgments
+
+Thanks to ChatGPT for coding and finding bugs.
