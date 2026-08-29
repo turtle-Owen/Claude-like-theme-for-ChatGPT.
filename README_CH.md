@@ -1,3 +1,5 @@
+README:[Chinese 中文](https://github.com/turtlelnc/Claude-like-theme-for-ChatGPT./blob/main/README_CH.md)|[English 英语](https://github.com/turtlelnc/Claude-like-theme-for-ChatGPT./blob/main/README.md)
+
 # 仿 Claude 风格的 ChatGPT 主题
 
 为 ChatGPT 网站打造的、风格温暖且类似 Claude 的视觉主题。
