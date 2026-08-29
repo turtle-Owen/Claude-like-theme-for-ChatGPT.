@@ -1,0 +1,284 @@
+/* Claude-like Theme for ChatGPT v0.14.9 */
+
+:root {
+  color-scheme: light;
+
+  --warm-page: #e7e3dc;
+  --warm-surface: #ede9e2;
+  --warm-raised: #f2eee7;
+  --warm-sidebar: #ded9d0;
+  --warm-hover: #d5cfc5;
+  --warm-user: #dad5cc;
+  --warm-translucent: rgba(237, 233, 226, .96);
+  --warm-text: #302e2a;
+  --warm-muted: #6f6a62;
+  --warm-border: rgba(65, 58, 49, .12);
+
+  --main-surface-primary: var(--warm-page) !important;
+  --main-surface-secondary: var(--warm-surface) !important;
+  --main-surface-tertiary: var(--warm-raised) !important;
+  --sidebar-surface-primary: var(--warm-sidebar) !important;
+  --sidebar-surface-secondary: var(--warm-hover) !important;
+  --composer-surface: var(--warm-raised) !important;
+  --composer-surface-primary: var(--warm-raised) !important;
+  --message-surface: var(--warm-user) !important;
+  --surface-primary: var(--warm-surface) !important;
+}
+
+html.dark,
+.dark {
+  color-scheme: dark;
+
+  --warm-page: #262522;
+  --warm-surface: #2d2b28;
+  --warm-raised: #35322e;
+  --warm-sidebar: #211f1d;
+  --warm-hover: #393631;
+  --warm-user: #3a3732;
+  --warm-translucent: rgba(45, 43, 40, .97);
+  --warm-text: #e6e0d7;
+  --warm-muted: #aaa39a;
+  --warm-border: rgba(236, 226, 213, .10);
+
+  --main-surface-primary: var(--warm-page) !important;
+  --main-surface-secondary: var(--warm-surface) !important;
+  --main-surface-tertiary: var(--warm-raised) !important;
+  --sidebar-surface-primary: var(--warm-sidebar) !important;
+  --sidebar-surface-secondary: var(--warm-hover) !important;
+  --composer-surface: var(--warm-raised) !important;
+  --composer-surface-primary: var(--warm-raised) !important;
+  --message-surface: var(--warm-user) !important;
+  --surface-primary: var(--warm-surface) !important;
+}
+
+html body {
+  --main-surface-primary: var(--warm-page) !important;
+  --main-surface-secondary: var(--warm-surface) !important;
+  --main-surface-tertiary: var(--warm-raised) !important;
+  --sidebar-surface-primary: var(--warm-sidebar) !important;
+  --sidebar-surface-secondary: var(--warm-hover) !important;
+  --composer-surface: var(--warm-raised) !important;
+  --composer-surface-primary: var(--warm-raised) !important;
+  --message-surface: var(--warm-user) !important;
+  --surface-primary: var(--warm-surface) !important;
+}
+
+html,
+body,
+#__next,
+main,
+[role="main"] {
+  background-color: var(--warm-page) !important;
+  color: var(--warm-text) !important;
+}
+
+#page-header,
+header.bg-surface-primary,
+header[class~="bg-token-main-surface-primary"] {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select,
+option,
+label,
+summary,
+[contenteditable="true"] {
+  font-family: Charter, "Iowan Old Style", Georgia, "Songti SC", "STSong", serif !important;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, monospace !important;
+}
+
+.prose,
+[class~="prose"] {
+  line-height: 1.72 !important;
+  letter-spacing: .004em !important;
+}
+
+[class~="bg-token-sidebar-surface-primary"],
+[class~="bg-(--sidebar-surface-primary)"] {
+  background-color: var(--warm-sidebar) !important;
+}
+
+aside [aria-current="page"],
+nav [aria-current="page"] {
+  background-color: var(--warm-hover) !important;
+}
+
+textarea,
+input,
+[contenteditable="true"] {
+  color: var(--warm-text) !important;
+  background-color: transparent !important;
+}
+
+main form [class~="bg-token-main-surface-primary"],
+main form [class~="bg-token-composer-surface"],
+main form [class~="bg-(--composer-surface-primary)"] {
+  background-color: var(--warm-raised) !important;
+  border-color: var(--warm-border) !important;
+}
+
+/* Composer suggestion/actions panel: top-full is a sibling of the form. */
+html body [class~="absolute"][class~="top-full"][class~="box-border"][class~="w-full"][class~="ps-0"] {
+  --surface-primary: var(--warm-page) !important;
+  background-color: var(--warm-page) !important;
+  background-image: none !important;
+}
+
+html body [class~="absolute"][class~="top-full"][class~="box-border"][class~="w-full"][class~="ps-0"]
+  > [class~="bg-surface-primary"][class~="w-full"] {
+  background-color: var(--warm-page) !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove ChatGPT's native black footer fade. */
+#thread-bottom-container::after,
+[class*="threadFooterContentFade"]::after {
+  content: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  opacity: 0 !important;
+  box-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+#thread-bottom-container::before,
+[class*="threadFooterContentFade"]::before {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+[class*="threadFooterContentFade"] {
+  background-color: var(--warm-page) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.bg-token-main-surface-primary.rounded-full {
+  box-shadow: none !important;
+}
+
+[class*="backdrop-blur"] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.translucent-surface {
+  background-color: var(--warm-translucent) !important;
+  border-color: var(--warm-border) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.translucent-surface::before,
+.translucent-surface::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.text-token-text-tertiary {
+  color: var(--warm-muted) !important;
+}
+
+/* Library toolbar should blend into the page. */
+html body [data-testid="page-table-toolbar-shell"] {
+  background-color: var(--warm-page) !important;
+  background-image: none !important;
+}
+
+html body [data-testid="artifacts-surface-top-controls"] {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* Local markdown/code surfaces. */
+html.dark body .markdown.dark,
+html.dark body .markdown-new-styling.dark {
+  --bg-elevated-secondary: var(--warm-raised) !important;
+  --code-block-surface: var(--warm-raised) !important;
+  --main-surface-primary: var(--warm-page) !important;
+}
+
+html body main .markdown pre,
+html body main .markdown-new-styling pre {
+  background-color: var(--warm-raised) !important;
+  background-image: none !important;
+}
+
+html body main .markdown pre > code,
+html body main .markdown-new-styling pre > code {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+html body main [class~="[--code-block-surface:var(--bg-elevated-secondary)]"] {
+  --code-block-surface: var(--warm-raised) !important;
+  --bg-elevated-secondary: var(--warm-raised) !important;
+}
+
+html body main [class~="bg-(--code-block-surface)"] {
+  background-color: var(--warm-raised) !important;
+}
+
+/* Tool execution wrapper. */
+html body main .agent-turn
+[class~="bg-token-main-surface-primary"][class~="mt-0.5"][class~="mb-3"] {
+  --main-surface-primary: var(--warm-page) !important;
+  --bg-secondary-surface: var(--warm-raised) !important;
+  background-color: var(--warm-page) !important;
+  background-image: none !important;
+}
+
+/* STDOUT / STDERR panel. */
+html body main .agent-turn
+[class~="bg-token-bg-secondary-surface"][class~="overflow-x-auto"][class~="p-4"][class~="text-xs"] {
+  background-color: var(--warm-raised) !important;
+  background-image: none !important;
+  border-color: var(--warm-border) !important;
+}
+
+html body main .agent-turn
+[class~="bg-token-bg-secondary-surface"][class~="overflow-x-auto"][class~="p-4"][class~="text-xs"] pre,
+html body main .agent-turn
+[class~="bg-token-bg-secondary-surface"][class~="overflow-x-auto"][class~="p-4"][class~="text-xs"] code {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* "ChatGPT may make mistakes" disclaimer pill. */
+html body [data-testid="thread-disclaimer"] {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+html body [data-testid="thread-disclaimer"]
+[class~="bg-token-main-surface-primary"][class~="rounded-full"] {
+  --main-surface-primary: var(--warm-page) !important;
+  background-color: var(--warm-page) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
