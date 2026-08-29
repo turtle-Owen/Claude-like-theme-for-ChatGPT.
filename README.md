@@ -1,6 +1,10 @@
+README:[Chinese 中文](https://github.com/turtlelnc/Claude-like-theme-for-ChatGPT./blob/main/README_CH.md)|[English 英语](https://github.com/turtlelnc/Claude-like-theme-for-ChatGPT./blob/main/README.md)
+
 # Claude-like Theme for ChatGPT
 
 A warm, Claude-like visual theme for the ChatGPT website.
+
+The author recommends using the dark mode for the ChatGPT website, as it looks better than the light mode.
 
 This is an unofficial community project. It is not affiliated with or endorsed by OpenAI or Anthropic.
 
