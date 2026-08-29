@@ -40,3 +40,7 @@ README:[Chinese 中文](https://github.com/turtlelnc/Claude-like-theme-for-ChatG
 ## 许可证
 
 MIT
+
+## 致谢
+
+感谢 ChatGPT 编写代码并查找错误。
